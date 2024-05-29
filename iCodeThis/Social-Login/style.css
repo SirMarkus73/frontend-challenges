@@ -53,6 +53,21 @@ body {
   bottom: calc(-32px - var(--card-border-size));
 }
 
+@media (max-width: 500px) {
+  .members img:first-child,
+  .members img:last-child {
+    display: none;
+  }
+
+  .email-form {
+    width: 80%;
+  }
+
+  .submit-button {
+    translate: 2.5rem;
+  }
+}
+
 .members img {
   border-radius: 100%;
   border: var(--text-color) solid 0.25rem;
