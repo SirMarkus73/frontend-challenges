@@ -67,6 +67,11 @@ body {
 .members img {
   border-radius: 100%;
   border: var(--text-color) solid 0.25rem;
+  transition: scale 150ms;
+}
+
+.members img:hover {
+  scale: 1.2;
 }
 
 .email-form {
