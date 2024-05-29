@@ -62,10 +62,6 @@ body {
   .email-form {
     width: 100%;
   }
-
-  .submit-button {
-    translate: 2.5rem;
-  }
 }
 
 .members img {
