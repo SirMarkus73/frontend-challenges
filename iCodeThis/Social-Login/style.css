@@ -60,7 +60,7 @@ body {
   }
 
   .email-form {
-    width: 80%;
+    width: 100%;
   }
 
   .submit-button {
@@ -75,7 +75,7 @@ body {
 
 .email-form {
   position: relative;
-  width: 60%;
+  width: 80%;
   height: 3rem;
 }
 
