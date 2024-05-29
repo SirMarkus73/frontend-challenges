@@ -74,14 +74,16 @@ body {
 }
 
 .email-form {
+  display: flex;
   position: relative;
+
   width: 80%;
   height: 3rem;
 }
 
 .input {
   width: 100%;
-  height: 2.5rem;
+  height: 100%;
   padding: 1.5rem;
   border-radius: 2.5rem;
   border: 0;
@@ -94,8 +96,10 @@ body {
 }
 
 .submit-button {
-  position: absolute;
   display: flex;
+  position: absolute;
+  right: 5px;
+  top: calc(3rem / 10);
   justify-content: center;
   align-items: center;
 
@@ -103,8 +107,6 @@ body {
   color: #3d3d3d;
   transition: color 250ms, background-color 250ms;
 
-  bottom: 0.3rem;
-  right: 0;
   width: 2rem;
   height: 2rem;
   margin: 0.2rem;
