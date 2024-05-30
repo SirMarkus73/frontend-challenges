@@ -1,0 +1,178 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+button {
+  background: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+/* Main CSS */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0.3rem 0.3rem 0.5rem #cfcfcf;
+}
+
+.card-header {
+  --_card-bg: linear-gradient(90deg, #84a4e9 0%, #183ea5 100%);
+
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  padding: 2rem 2rem;
+  padding-bottom: 4rem;
+
+  gap: 0.5rem;
+
+  color: white;
+
+  margin-bottom: 2rem;
+
+  border-radius: 0 0 0.5rem 2rem;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.card-header::before {
+  position: absolute;
+  content: '';
+  top: -3rem;
+  left: -0.5rem;
+  border-bottom-left-radius: 2.5rem;
+  rotate: -10deg;
+  width: 110%;
+  height: 105%;
+  background: var(--_card-bg);
+  z-index: -1;
+}
+
+.card-header img {
+  border-radius: 100%;
+  border: #84a4e9 solid 0.5rem;
+}
+
+.card-header h3 {
+  font-weight: 800;
+}
+
+.card-header p {
+  font-weight: 100;
+}
+
+.add-branch {
+  background-color: #3b8df8;
+  border-radius: 0.5rem;
+  color: white;
+
+  transition: scale 0.5s ease-in-out;
+}
+
+.add-branch-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: currentColor;
+
+  width: 100%;
+  height: 100%;
+
+  gap: 0.3rem;
+  padding: 0.5rem 1rem;
+}
+
+.add-branch-icon {
+  transition: rotate 0.75s, scale 0.5s ease-in-out;
+}
+
+.add-branch:hover {
+  scale: 1.25;
+}
+
+.add-branch:hover .add-branch-icon {
+  scale: 1.25;
+  rotate: 180deg;
+}
+
+.card-main {
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.card-main-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card-main-section {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  padding: 0.5rem;
+  padding-left: 2rem;
+
+  gap: 0.5rem;
+
+  transition: color 150ms, border 150ms;
+  border-left: transparent solid;
+
+  cursor: pointer;
+}
+
+.card-main-section-icon {
+  color: grey;
+}
+
+.card-main-section:hover {
+  color: #3b8df8;
+  border-left: #3b8df8 solid;
+}
+
+.card-main-section:hover .card-main-section-icon {
+  color: #3b8df8;
+}
+
+.close-menu-button {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  scale: 1.5;
+  color: grey;
+
+  transition: scale 0.5s;
+}
+
+.close-menu-button:hover {
+  scale: 2;
+}
+
+.close-menu-icon {
+  rotate: 45deg;
+}
